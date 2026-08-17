@@ -1,0 +1,154 @@
+/* *{
+    outline: 1px rgb(238, 0, 255) solid;
+} */
+*{
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+}
+html, body{
+    margin: 0;
+    font-family: 'inter';
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'inter';
+    src: url('./assets/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+header{
+    background: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.858);
+}
+
+header > img{
+    width: 2.2rem;
+    margin-right: 7px;
+}
+
+header > h1{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.journal-entry{
+    display: flex;
+    margin-bottom: 2.3rem;
+}
+
+.main-image-container{
+    /* width: 100%;
+    height: 100%; */
+    width: 7.8rem;
+    height: 10.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 1.1rem;
+}
+.main-image{
+    width: 100%;
+    height: 100%;
+    /* max-height: 340px; */
+    object-fit: cover;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.marker-map{
+    width: 0.8rem;
+    margin-right: 4px;
+}
+
+.description > a{
+    color: black;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.description > a:hover{
+    text-decoration: underline;
+}
+
+@media(min-width: 320px) and (max-width: 426px){
+    .journal-entry{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-image-container{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        flex-shrink: 1;
+        margin-right: 1.1rem; 
+        width: auto;
+        margin: 0 auto 1rem auto;
+    }
+
+    .main-image{
+        max-height: 340px;
+    }
+
+    .description > p{
+        font-size: 0.8rem;
+    }
+}
+
+@media(min-width: 427px) and (max-width: 768px){
+    .journal-entry{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-image-container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-image{
+        max-height: 340px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .container{
+        padding: 2rem 1rem 1rem;
+    }
+
+    .description > p{
+        font-size: 0.9rem;
+    }
+
+    .description > h2{
+        margin: 0.7rem auto 0.7rem 0;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1439px){
+    .description > p{
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width: 2560px){
+    body{
+        font-size: 1.25rem;
+    }
+
+    header > h1{
+        font-size: 1.2rem;
+    }
+
+    .main-image{
+        height: 100%;
+    }
+}
