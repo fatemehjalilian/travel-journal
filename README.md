@@ -23,14 +23,14 @@ For example, the travel entries are sorted as data and rendered dynamically usin
 
 ## project structure
 src/
-  assets/
-  index.html
-  index.css
-  index.jsx
-  App.jsx
-  components/
-  data.js
-  README.md
+- assets/
+- index.html
+- index.css
+- index.jsx
+- App.jsx
+- components/
+- data.js
+- README.md
 
 ## Live demo
 https://fatemehjalilian.github.io/travel-journal/
